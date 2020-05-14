@@ -13,3 +13,5 @@ https://munrramt.github.io/HTML-CSS-Tutorial-and-Projects-Course/
 ## Projetos do Curso
 
 1 - [HTML Coffee Project](https://munrramt.github.io/HTML-CSS-Tutorial-and-Projects-Course/html-coffee-project/index.html)
+
+2 - [Tea Station Project](https://munrramt.github.io/HTML-CSS-Tutorial-and-Projects-Course/tea-station-project/index.html)
