@@ -81,3 +81,9 @@ p {
 }
 /* Global */
 
+/* Header */
+.header {
+    min-height: 100vh;
+    background: url("./images/main-bcg.jpeg");
+}
+/* Header */
