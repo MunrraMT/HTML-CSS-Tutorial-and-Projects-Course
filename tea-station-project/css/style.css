@@ -149,3 +149,10 @@ p {
     padding: 1rem 1.75rem;
 }
 /* Header */
+
+/* Content Divider */
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient( to left, var( --color-primary ), #e9b949, var( --color-primary ) );
+}
+/* Content Divider */
