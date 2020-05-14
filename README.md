@@ -1,2 +1,2 @@
 # HTML-CSS-Tutorial-and-Projects-Course
-HTML &amp; CSS Tutorial and Projects Course - Udemy
+https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/
