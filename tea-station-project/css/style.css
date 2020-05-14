@@ -11,7 +11,7 @@
     --color-grey-10: #f1f5f8;
     --color-white: #fff;
     --font-family-primary: "Catamaran", sans-serif;
-    --font-family-secondary: "Grand Hotel"
+    --font-family-secondary: "Grand Hotel";
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
     --radius: 0.5rem;
@@ -81,9 +81,71 @@ p {
 }
 /* Global */
 
+/* More Global */
+.btn {
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.75rem 1rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.2 );
+}
+.btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+/* More Global */
+
 /* Header */
 .header {
     min-height: 100vh;
-    background: url("./images/main-bcg.jpeg");
+    background: linear-gradient( rgba( 0, 0, 0, 0.6 ), rgba( 0, 0, 0, 0.6 ) ), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
+    position: relative;
+    /* animation */
+    overflow: hidden;
+    /* animation */
+}
+.banner {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.banner h2 {
+    font-family: var(--font-family-secondary);
+    color: var(--color-primary);
+    /* animation */
+
+    /* animation */
+}
+.banner h1 {
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+    /* animation */
+
+    /* animation */
+}
+.banner-btn {
+    outline: 0.125rem solid var(--color-primary);
+    outline-offset: 0.25rem;
+    font-size: 1.25rem;
+    padding: 1rem 1.75rem;
 }
 /* Header */
