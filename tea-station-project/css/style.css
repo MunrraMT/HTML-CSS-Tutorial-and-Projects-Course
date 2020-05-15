@@ -156,3 +156,45 @@ p {
     background: linear-gradient( to left, var( --color-primary ), #e9b949, var( --color-primary ) );
 }
 /* Content Divider */
+
+/* skills section */
+.skills {
+    background-color: var(--color-grey-10);
+}
+.skill {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    display: inline-block;
+    color: var(--color-primary);
+}
+.skill-text {
+    color: var(--color-grey-5);
+    max-width: 17rem;
+    margin: 0 auto;
+}
+.skill:hover {
+    background-color: var(--color-white);
+    box-shadow: 0 3px var(--color-primary);
+}
+.skill:hover .skill-icon {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+/* skills section */
