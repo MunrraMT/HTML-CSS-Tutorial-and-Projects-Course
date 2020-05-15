@@ -59,7 +59,7 @@ h4 {
 p {
     margin-bottom: 1.25rem;
 }
-@media screen and ( min-width: 800px ) {
+@media screen and (min-width: 800px) {
     h1 {
         font-size: 4rem;
     }
@@ -98,18 +98,23 @@ p {
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.2 );
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
     color: var(--color-primary);
     background-color: var(--color-primary-light);
+}
+.clearfix::after, .clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
 }
 /* More Global */
 
 /* Header */
 .header {
     min-height: 100vh;
-    background: linear-gradient( rgba( 0, 0, 0, 0.6 ), rgba( 0, 0, 0, 0.6 ) ), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6 )), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
     position: relative;
     /* animation */
     overflow: hidden;
@@ -153,7 +158,7 @@ p {
 /* Content Divider */
 .content-divider {
     height: 0.5rem;
-    background: linear-gradient( to left, var( --color-primary ), #e9b949, var( --color-primary ) );
+    background: linear-gradient(to left, var( --color-primary ), #e9b949, var( --color-primary) );
 }
 /* Content Divider */
 
@@ -196,5 +201,16 @@ p {
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
+}
+@media screen and (min-width: 576px) {
+    .skill {
+        float: left;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .skill {
+        width: 25%;
+    }
 }
 /* skills section */
