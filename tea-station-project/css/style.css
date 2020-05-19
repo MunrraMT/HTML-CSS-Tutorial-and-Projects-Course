@@ -151,10 +151,24 @@ p {
     background-color: var(--color-grey-10);
     z-index: 6;
     box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
-    /* hide navbar */
+    /*hidenavbar*/
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
 }
 .showNav {
-
+    transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -ms-transform: translate(0%);
+    -o-transform: translate(0%);
 }
 .navbar-header {
     text-align: right;
