@@ -1,8 +1,8 @@
-/* Fonts */
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap');
-/* Fonts */
+/* fonts */
 
-/* Variables */
+/* variables */
 :root {
     --color-primary: #678e3e;
     --color-primary-light: #beed8c;
@@ -16,9 +16,9 @@
     --spacing: 0.25rem;
     --radius: 0.5rem;
 }
-/* Variables */
+/* variables */
 
-/* Global */
+/* global */
 * {
     margin: 0;
     padding: 0;
@@ -79,9 +79,9 @@ p {
         line-height: 1;
     }
 }
-/* Global */
+/* global */
 
-/* More Global */
+/* more global */
 .btn {
     text-transform: uppercase;
     background-color: var(--color-primary);
@@ -128,9 +128,23 @@ p {
         padding: 4rem 1rem;
     }
 }
-/* More Global */
+/* more global */
 
-/* Header */
+/* navbar */
+.nav-btn {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    z-index: 9;
+    cursor: pointer;
+    /* animation */
+    
+}
+/* navbar */
+
+/* header */
 .header {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6 )), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
@@ -172,14 +186,14 @@ p {
     font-size: 1.25rem;
     padding: 1rem 1.75rem;
 }
-/* Header */
+/* header */
 
-/* Content Divider */
+/* content divider */
 .content-divider {
     height: 0.5rem;
     background: linear-gradient(to left, var( --color-primary ), #e9b949, var( --color-primary) );
 }
-/* Content Divider */
+/* content divider */
 
 /* skills section */
 .skills {
