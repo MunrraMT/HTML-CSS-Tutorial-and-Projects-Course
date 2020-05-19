@@ -130,6 +130,128 @@ p {
 }
 /* more global */
 
+/* animation */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+@keyframes showBannerBtn {
+    0% {
+        transform: scale(1.25);
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        opacity: 0;
+}
+    50% {
+        transform: scale(1.75);
+        -webkit-transform: scale(1.75);
+        -moz-transform: scale(1.75);
+        -ms-transform: scale(1.75);
+        -o-transform: scale(1.75);
+        opacity: 0.5;
+}
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
+        -moz-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+        -o-transform: translateX(1000px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-200px);
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-1000px);
+        -webkit-transform: translateX(-1000px);
+        -moz-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+        -o-transform: translateX(-1000px);
+        opacity: 0;
+}
+    50% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
+        opacity: 0.5;
+}
+    75% {
+        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        opacity: 0.75;
+}
+    100% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* animation */
+
 /* navbar */
 .nav-btn {
     position: fixed;
@@ -139,8 +261,8 @@ p {
     color: var(--color-primary);
     z-index: 5;
     cursor: pointer;
-    /* animation */
-    
+    animation: bounce 2s ease infinite;
+    -webkit-animation: bounce 2s ease infinite;
 }
 .navbar {
     position: fixed;
@@ -151,7 +273,6 @@ p {
     background-color: var(--color-grey-10);
     z-index: 6;
     box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
-    /*hidenavbar*/
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -222,9 +343,7 @@ p {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6 )), url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
     position: relative;
-    /* animation */
     overflow: hidden;
-    /* animation */
 }
 .banner {
     text-align: center;
@@ -240,24 +359,24 @@ p {
 .banner h2 {
     font-family: var(--font-family-secondary);
     color: var(--color-primary);
-    /* animation */
-
-    /* animation */
+    animation: slideFromRight 5s ease-in-out 1;
+    -webkit-animation: slideFromRight 5s ease-in-out 1;
 }
 .banner h1 {
     text-transform: uppercase;
     color: var(--color-white);
     margin-top: 1.25rem;
     margin-bottom: 2rem;
-    /* animation */
-
-    /* animation */
+    animation: slideFromLeft 5s ease-in-out 1;
+    -webkit-animation: slideFromLeft 5s ease-in-out 1;
 }
 .banner-btn {
     outline: 0.125rem solid var(--color-primary);
     outline-offset: 0.25rem;
     font-size: 1.25rem;
     padding: 1rem 1.75rem;
+    animation: showBannerBtn 5s linear 1;
+    -webkit-animation: showBannerBtn 5s linear 1;
 }
 /* header */
 
