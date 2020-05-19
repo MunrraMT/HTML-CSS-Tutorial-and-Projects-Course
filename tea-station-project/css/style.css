@@ -327,3 +327,80 @@ p {
     }
 }
 /* products section */
+
+/* services section */
+.services-title {
+    margin-top: 4rem;
+    margin-bottom: -4rem;
+    text-align: center;
+}
+.service-card {
+    margin: 2rem 0;
+    background-color: var(--color-grey-10);
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.service-card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.service-img {
+    /*height: 17rem;
+    */object-fit: cover;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.service-info {
+    text-align: center;
+    padding: 3rem 1rem 2.5rem 1rem;
+}
+.service-info p {
+    max-width: 20rem;
+    color: var(--color-grey-5);
+    margin: 0 auto;
+}
+.service-btn {
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    padding: 0.375rem 0.5rem;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+    .service-card {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        /* 100% 45% 90% 5% */
+    }
+}
+@media screen and (min-width: 992px) {
+    .service-card {
+        width: 30%;
+        margin-right: 3.3333%;
+        /* 100% 30% 3.3333% */
+    }
+}
+/* services section */
