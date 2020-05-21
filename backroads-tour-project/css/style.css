@@ -313,6 +313,80 @@ p {
 /* end of services section */
 
 /* feature tours section */
+.tour-card {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    background-color: var(--color-grey-10);
+    box-shadow: var(--light-shadow);
+    margin-bottom: 2rem;
+}
+.tour-card:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);    
+}
+.tour-img-container {
+    position: relative;
+}
+.tour-img {
+    /* height: 15rem; */
+    object-fit: cover;
+}
+.tour-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary-8);
+    margin-bottom: 0;
+    color: var(--color-primary-1);
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+}
+.tour-info {
+    padding: 1.25rem 1.5rem;
+}
+.tour-footer {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tour-footer p {
+    line-height: 0;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--color-primary-5);
+}
+.tour-btn {
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .featured-center {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tour-card {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 49%;
+    }
+}
+@media screen and (min-width: 1170px) {
+    .tour-card {
+        flex-basis: 31%;
+    }
+}
 /* end of feature tours section */
 
 /* contact section */
