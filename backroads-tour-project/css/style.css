@@ -251,6 +251,65 @@ p {
 /* end of about section */
 
 /* services section */
+.services {
+    background-color: var(--color-grey-10);
+}
+.service {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.service-icon {
+    background-color: var(--color-primary-5);
+    color: var(--color-primary-1);
+    padding: 0.5rem;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.service-text {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+    .services-center {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .service {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 49%;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .service {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 33.3333%;
+    }
+}
+@media screen and (min-width: 1170px) {
+    .service {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        text-align: left;        
+    }
+    .service-icon {
+        align-self: flex-start;
+    }
+    .service-info {
+        padding-left: 1rem;
+    }
+    .service-title {
+        margin-bottom: 0.5rem;
+    }
+}
 /* end of services section */
 
 /* feature tours section */
