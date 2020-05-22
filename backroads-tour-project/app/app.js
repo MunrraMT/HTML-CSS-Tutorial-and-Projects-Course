@@ -1,5 +1,5 @@
 // SET DATA
-const date = (document.getElementById("date").innerHTML = new Date().getFullYear);
+const date = (document.getElementById("date").innerHTML = new Date().getFullYear());
 
 // NAV TOGGLE
 const navBtn = document.getElementById("nav-toggle");
