@@ -229,7 +229,8 @@ p {
     -o-transition: var(--transition);
 }
 .show-links {
-    height: 280px;
+    height: calc(402px - 66px);
+    /* height: 280px; */
 }
 /* end of 280px */
 /* end of navbar */
