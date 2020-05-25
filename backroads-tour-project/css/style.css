@@ -233,6 +233,58 @@ p {
     /* height: 280px; */
 }
 /* end of 280px */
+@media screen and (min-width: 992px) {
+    /* hide toggle button */
+    .navbar {
+        padding: 1rem 2rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .nav-center {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        height: auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .nav-link {
+        padding: 0 0;
+        margin-right: 0.7rem;
+    }
+    .nav-link:hover {
+        padding-left: 0;
+        color: var(--color-primary-5);
+        background-color: transparent;
+    }
+    .nav-header {
+        padding: 0 0;
+    }
+    .nav-icons {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .nav-icon {
+        margin-right: 0.7rem;
+        color: var(--color-primary-5);
+        font-size: 1.2rem;
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
+    .nav-icon:hover {
+        color: var(--color-primary-8);
+    }
+}
 /* end of navbar */
 
 /* hero section */
