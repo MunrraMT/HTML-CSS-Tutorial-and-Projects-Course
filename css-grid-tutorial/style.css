@@ -18,3 +18,10 @@ body {
     text-align: center;
     border: 1px solid red;
 }
+
+/* sintaxe basica */
+.container {
+    display: grid;
+    grid-template-columns: 200px 300px;
+}
+/* end of sintaxe basica */
