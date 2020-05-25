@@ -37,7 +37,9 @@ body {
 
 /* sintaxe basica */
 .container {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 200px 300px 200px;
+    grid-template-columns: 200px auto 10rem;
+    grid-template-rows: auto 5rem;
 }
 /* end of sintaxe basica */
