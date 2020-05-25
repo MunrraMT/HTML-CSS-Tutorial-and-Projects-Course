@@ -39,7 +39,7 @@ body {
 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 200px auto 10rem;
-    grid-template-rows: auto 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;    
 }
 /* end of sintaxe basica */
