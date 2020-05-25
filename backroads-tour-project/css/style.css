@@ -218,6 +218,20 @@ p {
     background-color: var(--color-primary-8);
     padding-left: 3rem;
 }
+/* 280px */
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.show-links {
+    height: 280px;
+}
+/* end of 280px */
 /* end of navbar */
 
 /* hero section */
