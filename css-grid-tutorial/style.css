@@ -41,5 +41,6 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 117px);
     justify-content: center;
+    align-content: center;
 }
 /* end of sintaxe basica */
