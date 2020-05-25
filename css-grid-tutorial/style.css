@@ -38,14 +38,35 @@ body {
 /* sintaxe basica */
 .container {
     margin: 7rem;
-    min-height: 100vh;
     display: grid;
-    grid-template-columns: [start] 100px [col-1-end] 100px [col-2-end] 100px [end];
-    grid-template-rows: [start] 100px [row-1-end] 100px [row-2-end] 100px [end];
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
     gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-areas:
+    "a a b"
+    "a a b"
+    "c c b"
+    "d d d"
+    "e f f"
 }
 .cell-1 {
-    grid-column: start/col-2-end;
-    grid-row: start/row-2-end;
+    grid-area: a;
+}
+.cell-2 {
+    grid-area: b;
+}
+.cell-3 {
+    grid-area: c;
+}
+.cell-4 {
+    grid-area: d;
+}
+.cell-5 {
+    grid-area: e;
+}
+.cell-6 {
+    grid-area: f;
 }
 /* end of sintaxe basica */
