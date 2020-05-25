@@ -37,12 +37,9 @@ body {
 
 /* sintaxe basica */
 .container {
-    margin: 7rem;
+    min-height: 100vh;
     display: grid;
-    padding: 1rem;
-    margin: 1rem;
-    grid-template-columns: auto [start] repeat(10, 100px) [end] auto;
-    grid-template-rows: repeat(2, 300px);
-    gap: 1rem;
+    grid-template-columns: repeat(10, 117px);
+    justify-content: center;
 }
 /* end of sintaxe basica */
