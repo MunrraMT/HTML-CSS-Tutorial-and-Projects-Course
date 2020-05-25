@@ -44,29 +44,17 @@ body {
     gap: 1rem;
     padding: 1rem;
     margin: 1rem;
-    grid-template-areas:
-    "a a b"
-    "a a b"
-    "c c b"
-    "d d d"
-    "e f f"
 }
 .cell-1 {
-    grid-area: a;
-}
-.cell-2 {
-    grid-area: b;
-}
-.cell-3 {
-    grid-area: c;
-}
-.cell-4 {
-    grid-area: d;
-}
-.cell-5 {
-    grid-area: e;
+    order: 2;
 }
 .cell-6 {
-    grid-area: f;
+    order: -1;
+}
+.cell-5 {
+    order: 3;
+}
+.cell-3 {
+    order: 4;
 }
 /* end of sintaxe basica */
