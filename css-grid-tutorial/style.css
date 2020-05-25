@@ -39,22 +39,10 @@ body {
 .container {
     margin: 7rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    gap: 1rem;
     padding: 1rem;
     margin: 1rem;
-}
-.cell-1 {
-    order: 2;
-}
-.cell-6 {
-    order: -1;
-}
-.cell-5 {
-    order: 3;
-}
-.cell-3 {
-    order: 4;
+    grid-template-columns: auto [start] repeat(10, 100px) [end] auto;
+    grid-template-rows: repeat(2, 300px);
+    gap: 1rem;
 }
 /* end of sintaxe basica */
