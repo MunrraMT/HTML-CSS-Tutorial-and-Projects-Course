@@ -107,3 +107,32 @@ p {
     }
 }
 /* end of main navbar */
+
+/* hero page */
+.hero-header {
+    min-height: 100vh;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner {
+
+}
+.hero-banner p {
+    width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .hero-banner {
+        padding: 0 3rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero-header {
+        background: linear-gradient(rgba(241,80,37,0.75),rgba(0,0,0,0.75)), url('./images/image-2.jpeg') center/cover fixed no-repeat;
+    }
+}
+/* end of hero page */
