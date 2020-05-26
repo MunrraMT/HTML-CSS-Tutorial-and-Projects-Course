@@ -166,6 +166,8 @@ p {
 .card-footer span {
     color: var(--primaryColor);
 }
+
+/* 
 @media screen and (min-width: 768px) {
     .cards-center {
         display: grid;
@@ -177,5 +179,13 @@ p {
     .cards-center {
         grid-template-columns: repeat(3, 1fr);
     }
+} 
+*/
+
+.cards-center {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
 }
 /* end of cards page */
