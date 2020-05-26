@@ -39,10 +39,7 @@ body {
 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    justify-content: center;
-    align-items: flex-start;
-    justify-items: center;
+    grid-template-columns: minmax(0px, 1fr) minmax(10px, 1170px) minmax(0px, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
 }
 /* end of sintaxe basica */
