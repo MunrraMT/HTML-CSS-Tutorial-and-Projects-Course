@@ -145,6 +145,34 @@ p {
 /* end of global classes */
 
 /* navbar */
+.nav-links {
+    display: none;
+}
+.nav {
+    height: 5rem;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    transition: var(--mainTransition);
+}
+.nav-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.nav-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--colorPrimary-5);
+    font-size: 2rem;
+    cursor: pointer;
+    justify-self: end;
+}
 /* end of navbar */
 
 /* sidebar */
