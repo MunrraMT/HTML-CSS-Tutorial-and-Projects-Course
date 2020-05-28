@@ -172,6 +172,7 @@ p {
     font-size: 2rem;
     cursor: pointer;
     justify-self: end;
+    margin-right: 1rem;
 }
 @media screen and (min-width: 768px) {
     .nav {
@@ -221,6 +222,9 @@ p {
     transition: var(--mainTransition);
     /* add later */
     transform: translateX(-100%);
+}
+.show-sidebar {
+    transform: translateX(0);
 }
 .sidebar-links {
     text-align: center;
