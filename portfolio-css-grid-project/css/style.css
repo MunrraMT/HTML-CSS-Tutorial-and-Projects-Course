@@ -206,6 +206,18 @@ p {
 }
 /* end of navbar */
 
+/* fixed navbar */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--colorWhite);
+    z-index: 2;
+    box-shadow: var(--mainLightShadow);
+}
+/* end of fixed navbar */
+
 /* sidebar */
 .sidebar {
     position: fixed;
@@ -279,6 +291,9 @@ p {
 /* end of sidebar */
 
 /* hero */
+.hero {
+    min-height: 150vh;
+}
 /* end of hero */
 
 /* about */
