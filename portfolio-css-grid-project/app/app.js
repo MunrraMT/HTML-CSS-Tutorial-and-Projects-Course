@@ -7,7 +7,7 @@ const date = document.querySelector("#date");
 
 // add fixed class to navbar
 window.addEventListener("scroll", function() {
-    if(window.pageXOffset > 80) {
+    if(window.pageYOffset > 80) {
         navbar.classList.add("navbar-fixed");
     } else {
         navbar.classList.remove("navbar-fixed");
