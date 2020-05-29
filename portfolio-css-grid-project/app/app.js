@@ -1,5 +1,6 @@
 // variables
 const navbar = document.querySelector("#nav");
+const navbarGhost = document.querySelector("#nav-ghost");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
@@ -9,8 +10,10 @@ const date = document.querySelector("#date");
 window.addEventListener("scroll", function() {
     if(window.pageYOffset > 80) {
         navbar.classList.add("navbar-fixed");
+        navbarGhost.classList.add("nav-ghost-fixed");
     } else {
         navbar.classList.remove("navbar-fixed");
+        navbarGhost.classList.remove("nav-ghost-fixed");
     }
 });
 

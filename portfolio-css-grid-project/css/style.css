@@ -163,6 +163,9 @@ p {
     align-items: center;
     transition: var(--mainTransition);
 }
+.nav-ghost {
+    display: none;
+}
 .nav-center {
     width: 100%;
     max-width: 1170px;
@@ -223,6 +226,9 @@ p {
     background-color: var(--colorWhite);
     z-index: 2;
     box-shadow: var(--mainLightShadow);
+}
+.nav-ghost-fixed {
+    display: block;
 }
 /* end of fixed navbar */
 
