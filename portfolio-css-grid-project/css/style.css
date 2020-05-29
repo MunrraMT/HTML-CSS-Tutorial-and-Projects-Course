@@ -142,6 +142,14 @@ p {
         width: 95vw;
     }
 }
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--colorPrimary-5);
+    margin-left: auto;
+    margin-right: auto;
+}
 /* end of global classes */
 
 /* navbar */
@@ -291,8 +299,29 @@ p {
 /* end of sidebar */
 
 /* hero */
+.hero .underline {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+.hero-img {
+    display: none;
+}
 .hero {
-    min-height: 150vh;
+    background-color: var(--colorPrimary-9);
+}
+.hero-center {
+    min-height: calc(100vh - 5rem);
+    display: grid;
+    place-items: center;
+}
+.hero-info h4 {
+    color: var(--colorGrey-5);
+}
+.hero-icons {
+    justify-items: start;
+}
+.hero-btn {
+    margin-top: 1.25rem;
 }
 /* end of hero */
 
