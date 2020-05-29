@@ -323,6 +323,32 @@ p {
 .hero-btn {
     margin-top: 1.25rem;
 }
+@media screen and (min-width: 992px) {
+    .hero-img {
+        display: block;
+        position: relative;
+    }
+    .hero-center {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-photo {
+        max-width: 25rem;
+        max-height: 30rem;
+        object-fit: cover;
+        border-radius: var(--mainRadius);
+        position: relative;
+    }
+    .hero-img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 0.25rem solid var(--colorPrimary-5);
+        top: 2rem;
+        right: -2rem;
+        border-radius: var(--mainRadius);
+    }
+}
 /* end of hero */
 
 /* about */
