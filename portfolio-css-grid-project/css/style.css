@@ -427,6 +427,18 @@ p {
 .service:hover .underline {
     background-color: var(--colorWhite);
 }
+@media screen and (min-width: 676px) {
+    .services-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+@media screen and (min-width: 1170px) {
+    .services-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* end of services */
 
 /* projects */
