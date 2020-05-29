@@ -154,6 +154,9 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.bg-grey {
+    background-color: var(--colorGrey-10);
+}
 /* end of global classes */
 
 /* navbar */
@@ -393,6 +396,37 @@ p {
 /* end of about */
 
 /* services */
+/* bg-grey in globals classes */
+.service {
+    background-color: var(--colorWhite);
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--mainRadius);
+    text-align: center;
+    transition: var(--mainTransition);
+}
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.service .underline {
+    width: 3rem;
+    height: 0.12rem;
+    transition: var(--mainTransition);
+}
+.service p {
+    transition: var(--mainTransition);
+}
+.service:hover {
+    background-color: var(--colorPrimary-5);
+    color: var(--colorWhite);
+}
+.service:hover p {
+    color: var(--colorWhite);
+}
+.service:hover .underline {
+    background-color: var(--colorWhite);
+}
 /* end of services */
 
 /* projects */
