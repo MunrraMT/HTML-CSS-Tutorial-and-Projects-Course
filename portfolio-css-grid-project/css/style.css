@@ -722,6 +722,37 @@ p {
 /* end of timeline */
 
 /* blog */
+.blog {
+    background-color: var(--colorGrey-10);
+}
+.card {
+    height: 27rem;
+    position: relative;
+    perspective: 1500px;
+
+}
+.card-side {
+    transition: var(--mainTransition);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card-front {
+    background-color: red;
+}
+.card-back {
+    background-color: green;
+    transform: rotateY(180deg);
+}
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+    transform: rotateY(0);
+}
 /* end of blog */
 
 /* footer */
