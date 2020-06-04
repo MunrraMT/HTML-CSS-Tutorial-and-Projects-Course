@@ -645,6 +645,42 @@ p {
 .skill-text-80 {
     left: 80%;
 }
+@keyframes carregando-50 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes carregando-70 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes carregando-80 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.skill-container:hover .value-50 {
+    animation-name: carregando-50;
+    animation-duration: 2s;
+}
+.skill-container:hover .value-70 {
+    animation-name: carregando-70;
+    animation-duration: 2s;
+}
+.skill-container:hover .value-80 {
+    animation-name: carregando-80;
+    animation-duration: 2s;
+}
 /* end of skills */
 
 /* timeline */
